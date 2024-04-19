@@ -1,0 +1,26 @@
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.videoScreen{
+    border: none !important;
+}
+
+@media only screen 
+and (min-device-width : 820px) 
+and (max-device-width : 1180px) 
+and (orientation : portrait) { 
+
+}
+
+
+@media only screen 
+and (min-device-width : 820px) 
+and (max-device-width : 1180px) 
+and (orientation : landscape) {
+#myVideoId{
+    width: 90% !important;
+}
+}
