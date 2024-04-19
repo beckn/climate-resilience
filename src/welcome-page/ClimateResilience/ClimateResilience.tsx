@@ -104,6 +104,27 @@ const ClimateResilience: React.FC = () => {
               </li>
             </ul>
           </div>
+          <div
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img
+              src="/assets/imaginefuture.svg"
+              alt="icon"
+              style={{ marginRight: "10px" }}
+            />{" "}
+            <h3 className="sub-heading">Imagine the Future</h3>
+          </div>
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/cDP7e1BWgek"
+            title="Why Does Google Kill So Many Products? | Untangled"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            style={{ borderRadius: "5px", marginTop: "20px" }}
+          ></iframe>
         </div>
       </div>
     </div>
