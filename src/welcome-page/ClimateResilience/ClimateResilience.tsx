@@ -112,7 +112,7 @@ const ClimateResilience: React.FC = () => {
               alt="icon"
               style={{ marginRight: "10px" }}
             />{" "}
-            <h3 className="sub-heading ">Imagine the Future</h3>
+            <h3 className="sub-heading">Imagine the Future</h3>
           </div>
           <iframe
             width="100%"
