@@ -40,7 +40,7 @@ const ClimateResilience: React.FC = () => {
               fontWeight: "600",
             }}
           >
-            Figma ipsum component variant <br /> main layer. Scale arro.
+            Climate Resilience Data Highways<br/> for Forest Conservation
           </Typography.Title>
           <Typography.Paragraph
             style={{
@@ -51,8 +51,7 @@ const ClimateResilience: React.FC = () => {
               fontWeight: "600",
             }}
           >
-            Figma ipsum component variant main layer. Vertical export layer
-            blur.{" "}
+            A decentralized network for secure access to reliable data
           </Typography.Paragraph>
         </div>
         <img src="/assets/jica.png" alt="Logo" />
