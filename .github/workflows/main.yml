@@ -33,6 +33,19 @@ jobs:
          ssh-keyscan -H ${{ secrets.HOST_DNS }} >> ~/.ssh/known_hosts
          sudo apt-get install sshpass
 
+      - name: List Contents
+        run: |
+           pwd
+           echo "Contents of the current directory (in reverse order):"
+           ls -lr
+
+    #  - name: List Contents
+     #   run: |
+     #       echo "Contents of the dist directory (in reverse order):"
+     #       cd /home/runner/work//dragon-foods/dist
+     #       ls -lr
+
+
       - name: Deploy to server
         run: |
           sshpass -p '${{ secrets.EC2_SSH_KEY }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }} <<'ENDSSH'
