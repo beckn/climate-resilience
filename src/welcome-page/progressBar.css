@@ -53,3 +53,22 @@ line-height: 30px;
 text-align: center;
 color: #000000;
 }
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+
+.logo-text-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-text-left,
+.logo-text-right {
+  text-align: center;
+  width: 161px;
+}

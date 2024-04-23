@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../../welcome-page/selectExperience.css";
 import { useEffect } from "react";
 import { Typography } from "antd";
+import ScrollDownArrow from "../../common/ScrollDownArrow";
 
 const ClimateResilience: React.FC = () => {
   // <-- Corrected component declaration
@@ -20,6 +21,7 @@ const ClimateResilience: React.FC = () => {
   
 
   return (
+    <>
     <div style={{ overflow: "hidden" }}>
       <div className="headLogo-image">
         <Link to="/select-experience">
@@ -132,6 +134,8 @@ const ClimateResilience: React.FC = () => {
         </div>
       </div>
     </div>
+    <ScrollDownArrow/>
+    </>
   );
 };
 

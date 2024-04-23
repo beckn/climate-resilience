@@ -20,9 +20,9 @@ const WelcomeScreen = () => {
           <img className="Beckn-logo" src="/assets/beckn_lg.svg" alt={"Logo"} />
         </div>
         <div className="animate fadeIn five">
-          <Typography className="welcomeQuote">welcome to the</Typography>
+          <Typography className="welcomeQuote">Welcome to the Beckn <br/>Experience Center for Climate</Typography>
           <Typography className="welcomeQuote">
-            beckn experience center
+              Resilience Data Highways
           </Typography>
         </div>
         <div className="animate fadeIn five">

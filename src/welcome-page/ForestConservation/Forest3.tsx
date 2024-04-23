@@ -10,6 +10,7 @@ const Forest3 = () => {
         logoSrc='/assets/beckn_lg.svg'
         headingLine1='A leading food & beverage company with'
         headingLine2 = 'an ambitious sustainability agendanp'
+        logoLinkTo="/forestconservation"
       />
       <div className="climate-container">
         <div className="desktop-wrapper">
