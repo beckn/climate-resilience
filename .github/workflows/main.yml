@@ -37,6 +37,7 @@ jobs:
         run: |
           sshpass -p '${{ secrets.EC2_SSH_KEY }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }} <<'ENDSSH'
           cd /home/frontend-deploy 
+          cp -r /home/runner/work/dragon-foods/dragon-foods/build  /home
           ./deploy.sh
           ENDSSH
       
