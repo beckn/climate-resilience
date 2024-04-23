@@ -21,12 +21,12 @@ const SelectExperience = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="headLogo-image">
-        <Link to="/select-experience">
+        <Link to="/">
           <img
             className="Beckn-image"
             src="/assets/beckn_lg.svg"
             alt={"Logo"}
-            height={'40px'}
+            height={"40px"}
           />
         </Link>
         <div className="heading-container">
@@ -40,7 +40,7 @@ const SelectExperience = () => {
               fontWeight: "600",
             }}
           >
-            Climate Resilience Data Highways Themes
+            Climate Resilience Data Highways
           </Typography.Title>
           <Typography.Paragraph
             style={{
@@ -88,20 +88,23 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("ForestConservation")}>
-                <div className="card-with-image">
-                  <img
-                    className="first-image-card"
-                    src="/assets/forest_conservation.svg"
-                    alt={"BecknLogoIcon"}
-                  />
-                  <p className="card-title-image">
-                    <span className="font-color">
-                      Tackling climate change through forest conservation
-                    </span>
-                  </p>
-                </div>
-              </li>
+              <div style={{ marginTop: "1.8rem" }}>
+                <li style={{ filter: "grayscale(100%)", pointerEvents: "none" }}>
+                  <div className="card-with-image">
+                    <img
+                      className="first-image-card"
+                      src="/assets/forest_conservation.svg"
+                      alt={"BecknLogoIcon"}
+                    />
+                    <p className="card-title-image">
+                      <span style={{fontSize: '1.2rem'}} >
+                        Tackling climate change through forest conservation
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <span className="iframe-text">Coming Soon!</span>
+              </div>
             </ul>
           </div>
         </div>

@@ -1,14 +1,15 @@
-import Header from '../../common/Header/Header';
-import '../../welcome-page/ClimateResiliance.css';
+import Header from "../../common/Header/Header";
+import ScrollDownArrow from "../../common/ScrollDownArrow";
+import "../../welcome-page/ClimateResiliance.css";
 
 const Climate1 = () => {
-
   return (
     <>
       <Header
-        logoSrc='/assets/beckn_lg.svg'
-        headingLine1='An FMCG company delivers flood-resilient'
-        headingLine2 = 'farming advisory to its contract farmers'
+        logoSrc="/assets/beckn_lg.svg"
+        headingLine1="An FMCG company delivers flood-resilient"
+        headingLine2="farming advisory to its contract farmers"
+        logoLinkTo="/climateresilience"
       />
       <div className="climate-container">
         <div className="desktop-wrapper">
@@ -26,13 +27,18 @@ const Climate1 = () => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+          <div className="iframe-text">Prototype Powered by Beckn</div>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
           />{" "}
-          <h3 className="sub-heading">imagine the climate resilience data highways</h3>
+          <h3 className="sub-heading">
+            imagine the climate resilience data highways
+          </h3>
         </div>
         <iframe
           width="100%"
@@ -45,7 +51,9 @@ const Climate1 = () => {
           allowFullScreen
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
@@ -65,6 +73,7 @@ const Climate1 = () => {
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
       </div>
+      <ScrollDownArrow/>
     </>
   );
 };

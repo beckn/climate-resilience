@@ -77,14 +77,15 @@ const ProgressBar = () => {
 
   return (
     <div>
-      <div className="beckn-image">
+<div className="logo-container">
         <img
-          style={{
-            height: "50px",
-            width: "161px",
-            cursor: "pointer",
-          }}
+          className="logo-left"
           src="/assets/beckn_lg.svg"
+          alt={"Logo"}
+        />
+        <img
+          className="logo-right"
+          src="/assets/jica.png"
           alt={"Logo"}
         />
       </div>

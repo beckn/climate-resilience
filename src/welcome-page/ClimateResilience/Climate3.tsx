@@ -1,4 +1,5 @@
 import Header from "../../common/Header/Header";
+import ScrollDownArrow from "../../common/ScrollDownArrow";
 import '../../welcome-page/ClimateResiliance.css';
 
 const Climate3 = () => {
@@ -8,6 +9,7 @@ const Climate3 = () => {
         logoSrc="/assets/beckn_lg.svg"
         headingLine1="A humanitarian aid organization plans for"
         headingLine2="anticipatory aid"
+        logoLinkTo="/climateresilience"
       />
       <div className="climate-container">
         <div className="desktop-wrapper">
@@ -25,6 +27,7 @@ const Climate3 = () => {
             </div>
           </div>
         </div>
+        <div className="iframe-text">Prototype Powered by Beckn</div>
         <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
           <img
             src="/assets/videoIcon.svg"
@@ -64,6 +67,7 @@ const Climate3 = () => {
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
       </div>
+      <ScrollDownArrow/>
     </>
   );
 };

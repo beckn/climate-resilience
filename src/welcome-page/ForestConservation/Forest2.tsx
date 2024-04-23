@@ -10,6 +10,7 @@ const Forest2 = () => {
         logoSrc='/assets/beckn_lg.svg'
         headingLine1='Forest restoration project to ensure'
         headingLine2 = 'ecological health and sustainability'
+        logoLinkTo="/forestconservation"
       />
       <div className="climate-container">
         <div className="desktop-wrapper">

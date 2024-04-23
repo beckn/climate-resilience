@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../common/Header/Header";
 import '../../welcome-page/ClimateResiliance.css';
+import ScrollDownArrow from "../../common/ScrollDownArrow";
 
 const Climate2 = () => {
   return (
@@ -9,6 +10,7 @@ const Climate2 = () => {
         logoSrc="/assets/beckn_lg.svg"
         headingLine1="A climate services startup delivers flood"
         headingLine2="predictions for early warnings"
+        logoLinkTo="/climateresilience"
       />
       <div className="climate-container">
         <div className="desktop-wrapper">
@@ -27,6 +29,7 @@ const Climate2 = () => {
             </div>
           </div>
         </div>
+        <div className="iframe-text">Prototype Powered by Beckn</div>
         <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
           <img
             src="/assets/videoIcon.svg"
@@ -66,6 +69,7 @@ const Climate2 = () => {
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
       </div>
+      <ScrollDownArrow/>
     </>
   );
 };

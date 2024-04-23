@@ -10,6 +10,8 @@ const Forest1 = () => {
         logoSrc='/assets/beckn_lg.svg'
         headingLine1='Detect and measure forest degradation &'
         headingLine2 = 'facilitate intervention'
+        logoLinkTo="/forestconservation"
+
       />
       <div className="climate-container">
         <div className="desktop-wrapper">

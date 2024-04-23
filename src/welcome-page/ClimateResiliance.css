@@ -36,3 +36,14 @@
     color: #4e7796;
   }
   
+  .iframe-container {
+    position: relative;
+  }
+  
+  .iframe-text {
+    text-align: end;
+    margin-top: 1rem;
+    color: #4e4646;
+    font-weight: 600;
+  }
+  
