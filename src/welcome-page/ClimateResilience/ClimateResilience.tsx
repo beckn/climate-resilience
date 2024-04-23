@@ -69,7 +69,7 @@ const ClimateResilience: React.FC = () => {
                     />
                     <p className="card-title-image">
                       <span className="font-color">
-                        An FMCG company delivers flood-resilient farming
+                        An FMCG company delivers flood-resilience farming
                         advisory to its contract farmers{" "}
                       </span>
                     </p>
