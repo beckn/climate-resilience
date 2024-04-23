@@ -49,8 +49,7 @@ jobs:
       - name: Deploy to server
         run: |
           sshpass -p '${{ secrets.EC2_SSH_KEY }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }} <<'ENDSSH'
-          cd /home/frontend-deploy 
-          cp -r /${{ secrets.TARGET_DIR }}/runner/work/climate-res-experience-center/climate-res-experience-center/build  /home
+          cp -r /${{ secrets.TARGET_DIR }}/runner/work/climate-res-experience-center/climate-res-experience-center/build  /opt/artifact
           # ./deploy.sh
           ENDSSH
       
