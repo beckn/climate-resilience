@@ -36,7 +36,7 @@ const Climate2 = () => {
             alt="icon"
             style={{ marginRight: "10px" }}
           />{" "}
-          <h3 className="sub-heading">imagine the climate resilience data highways</h3>
+          <h3 className="sub-heading">View the Use-case Demo for Sky Analytics</h3>
         </div>
         <iframe
           width="100%"

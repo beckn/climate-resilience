@@ -27,7 +27,7 @@ const Climate1 = () => {
             </div>
           </div>
         </div>
-          <div className="iframe-text">Prototype Powered by Beckn</div>
+        <div className="iframe-text">Prototype Powered by Beckn</div>
         <div
           style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
         >
@@ -37,7 +37,7 @@ const Climate1 = () => {
             style={{ marginRight: "10px" }}
           />{" "}
           <h3 className="sub-heading">
-            imagine the climate resilience data highways
+            View the Use-case Demo for Dragon Foods
           </h3>
         </div>
         <iframe
@@ -73,7 +73,7 @@ const Climate1 = () => {
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
       </div>
-      <ScrollDownArrow/>
+      <ScrollDownArrow />
     </>
   );
 };
