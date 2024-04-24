@@ -1,6 +1,6 @@
 import Header from "../../common/Header/Header";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
-import '../../welcome-page/ClimateResiliance.css';
+import "../../welcome-page/ClimateResiliance.css";
 
 const Climate3 = () => {
   return (
@@ -28,7 +28,9 @@ const Climate3 = () => {
           </div>
         </div>
         <div className="iframe-text">Prototype Powered by Beckn</div>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
@@ -36,18 +38,23 @@ const Climate3 = () => {
           />{" "}
           <h3 className="sub-heading">View the Use-case Demo for HarmoniAid</h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/cDP7e1BWgek"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div>
+          <iframe
+            src="https://player.vimeo.com/video/936148929?h=05badaafe8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style={{
+              width: "100%",
+              height: "700px",
+            }}
+            title="Video_4"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "70px" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
@@ -55,19 +62,21 @@ const Climate3 = () => {
           />{" "}
           <h3 className="sub-heading">Behind the Scenes</h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/qPFJR__nhiU"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
+        <div>
+          <iframe
+            src="https://player.vimeo.com/video/935672602?h=c8a7ce7fb7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style={{
+              width: "100%",
+              height: "700px",
+            }}
+            title="Video_4_BTS"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
-      <ScrollDownArrow/>
+      <ScrollDownArrow />
     </>
   );
 };

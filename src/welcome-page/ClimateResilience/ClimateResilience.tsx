@@ -107,7 +107,7 @@ const ClimateResilience: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center" , marginTop: '70px' , marginBottom: '20px' }}>
               <img
                 src="/assets/imaginefuture.svg"
                 alt="icon"
@@ -118,17 +118,15 @@ const ClimateResilience: React.FC = () => {
                 Highways
               </h3>
             </div>
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/cDP7e1BWgek"
-              title="Why Does Google Kill So Many Products? | Untangled"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              style={{ borderRadius: "5px", marginTop: "20px" }}
-            ></iframe>
+            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/936514306?h=89570ff4e0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                title="video_1"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
