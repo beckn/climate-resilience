@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../../common/Header/Header";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
 import "../../welcome-page/ClimateResiliance.css";
@@ -20,8 +21,8 @@ const Climate1 = () => {
                 allow="clipboard-read; clipboard-write; geolocation"
                 src="https://dragon-foods-bap.becknprotocol.io/"
                 allowFullScreen
-                width={"100%"}
-                height={"100%"}
+                width="100%"
+                height="100%"
                 style={{ borderRadius: "36px" }}
               />
             </div>
@@ -29,49 +30,57 @@ const Climate1 = () => {
         </div>
         <div className="iframe-text">Prototype Powered by Beckn</div>
         <div
-          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginTop: "70px",
+          }}
         >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
-          />{" "}
+          />
           <h3 className="sub-heading">
             View the Use-case Demo for Dragon Foods
           </h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/cDP7e1BWgek"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
+        <div>
+          <iframe
+            src="https://player.vimeo.com/video/936080061?h=440346b17d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style={{
+              width: "100%",
+              height: "700px",
+            }}
+            title="Video_2"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
         <div
-          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+          style={{ display: "flex", alignItems: "center", marginTop: "70px" }}
         >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
-          />{" "}
+          />
           <h3 className="sub-heading">Behind the Scenes</h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/qPFJR__nhiU"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
+        <div>
+          <iframe
+            src="https://player.vimeo.com/video/935671577?h=195e848275&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style={{
+              width: "100%",
+              height: "700px",
+            }}
+            title="Video 2_BTS"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
       <ScrollDownArrow />
     </>
