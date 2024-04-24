@@ -56,3 +56,4 @@ jobs:
         run: |
          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }} 'mkdir -p /opt/artif'
          scp -r  /${{ secrets.TARGET_DIR }}/runner/work/climate-res-experience-center/climate-res-experience-center/build   ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }}:/var/www/climatedatahighways.becknprotocol.io.conf/public/
+         sudo chown -R www-data:www-data var/www/climatedatahighways.becknprotocol.io.conf/public/build
