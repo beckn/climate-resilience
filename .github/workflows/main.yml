@@ -22,7 +22,7 @@ jobs:
       
       - name: Generate React Build
         run: |
-         npm install
+         npm i --legacy-peer-deps
          npm run build
           
       - name: Deploy to Server 1
