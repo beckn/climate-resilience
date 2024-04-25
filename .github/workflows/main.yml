@@ -15,6 +15,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.0.0
+      - name: Copy .env file
+        env:
+          ENV_FILE_CONTENT: ${{ secrets.env }}
+        run: echo "$ENV_FILE_CONTENT" > .env
+      
+      - name: Generate React Build
+        run: |
+         npm install
+         npm run build
           
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
