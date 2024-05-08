@@ -1,15 +1,14 @@
-import React from 'react';
-import Header from '../../common/Header/Header';
-import '../../welcome-page/ClimateResiliance.css';
+import React from "react";
+import Header from "../../common/Header/Header";
+import "../../welcome-page/ClimateResiliance.css";
 
 const Forest3 = () => {
-
   return (
     <>
       <Header
-        logoSrc='/assets/beckn_lg.svg'
-        headingLine1='An impact investor tracks performance of a restoration '
-        headingLine2 = 'project'
+        logoSrc="/assets/beckn_lg.svg"
+        headingLine1="An impact investor tracks performance of a restoration "
+        headingLine2="project"
         logoLinkTo="/forestconservation"
       />
       <div className="climate-container">
@@ -29,13 +28,17 @@ const Forest3 = () => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
           />{" "}
-          <h3 className="sub-heading">imagine the climate resilience data highways</h3>
+          <h3 className="sub-heading">
+            imagine the climate resilience data highways
+          </h3>
         </div>
         <iframe
           width="100%"
@@ -48,7 +51,9 @@ const Forest3 = () => {
           allowFullScreen
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
