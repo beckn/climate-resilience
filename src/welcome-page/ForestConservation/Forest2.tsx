@@ -8,8 +8,8 @@ const Forest2 = () => {
     <>
       <Header
         logoSrc='/assets/beckn_lg.svg'
-        headingLine1='Forest restoration project to ensure'
-        headingLine2 = 'ecological health and sustainability'
+        headingLine1='A project implementing agency creates forest restoration'
+        headingLine2 = 'strategy'
         logoLinkTo="/forestconservation"
       />
       <div className="climate-container">

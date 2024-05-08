@@ -88,8 +88,8 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <div style={{ marginTop: "1.8rem" }}>
-                <li style={{ filter: "grayscale(100%)", pointerEvents: "none" }}>
+              <div>
+                <li onClick={() => handleNevigate("ForestConservation")}>
                   <div className="card-with-image">
                     <img
                       className="first-image-card"
@@ -97,13 +97,13 @@ const SelectExperience = () => {
                       alt={"BecknLogoIcon"}
                     />
                     <p className="card-title-image">
-                      <span style={{fontSize: '1.2rem'}} >
+                      <span className="font-color" >
                         Tackling climate change through forest conservation
                       </span>
                     </p>
                   </div>
                 </li>
-                <span className="iframe-text">Coming Soon!</span>
+                {/* <span className="iframe-text">Coming Soon!</span> */}
               </div>
             </ul>
           </div>

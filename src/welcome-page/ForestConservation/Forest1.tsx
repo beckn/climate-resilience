@@ -8,8 +8,8 @@ const Forest1 = () => {
     <>
       <Header
         logoSrc='/assets/beckn_lg.svg'
-        headingLine1='Detect and measure forest degradation &'
-        headingLine2 = 'facilitate intervention'
+        headingLine1='A state forest department assesses forest health and'
+        headingLine2 = 'prioritizes areas for intervention'
         logoLinkTo="/forestconservation"
 
       />
