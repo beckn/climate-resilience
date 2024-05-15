@@ -8,8 +8,8 @@ const Forest1 = () => {
     <>
       <Header
         logoSrc='/assets/beckn_lg.svg'
-        headingLine1='Detect and measure forest degradation &'
-        headingLine2 = 'facilitate intervention'
+        headingLine1='A state forest department assesses forest health and'
+        headingLine2 = 'prioritizes areas for intervention'
         logoLinkTo="/forestconservation"
 
       />
@@ -20,7 +20,7 @@ const Forest1 = () => {
               <iframe
                 className="ChooseExpIframe"
                 allow="clipboard-read; clipboard-write; geolocation"
-                src="https://workspace.google.com/intl/en_in/solutions/ai/"
+                src="https://state-forest-department-bap.becknprotocol.io/"
                 frameBorder="0"
                 allowFullScreen
                 width={"100%"}

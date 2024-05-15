@@ -8,8 +8,8 @@ const Forest2 = () => {
     <>
       <Header
         logoSrc='/assets/beckn_lg.svg'
-        headingLine1='Forest restoration project to ensure'
-        headingLine2 = 'ecological health and sustainability'
+        headingLine1='A project implementing agency creates forest restoration'
+        headingLine2 = 'strategy'
         logoLinkTo="/forestconservation"
       />
       <div className="climate-container">
@@ -19,7 +19,7 @@ const Forest2 = () => {
               <iframe
                 className="ChooseExpIframe"
                 allow="clipboard-read; clipboard-write; geolocation"
-                src="https://workspace.google.com/security/"
+                src="https://envirogrowth-foundation-bap.becknprotocol.io/"
                 frameBorder="0"
                 allowFullScreen
                 width={"100%"}
