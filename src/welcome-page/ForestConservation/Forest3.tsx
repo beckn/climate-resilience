@@ -18,7 +18,7 @@ const Forest3 = () => {
               <iframe
                 className="ChooseExpIframe"
                 allow="clipboard-read; clipboard-write; geolocation"
-                src="https://workspace.google.com/faq/"
+                src="https://earth-support-initiative-bap.becknprotocol.io/"
                 frameBorder="0"
                 allowFullScreen
                 width={"100%"}

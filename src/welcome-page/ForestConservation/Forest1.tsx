@@ -20,7 +20,7 @@ const Forest1 = () => {
               <iframe
                 className="ChooseExpIframe"
                 allow="clipboard-read; clipboard-write; geolocation"
-                src="https://workspace.google.com/intl/en_in/solutions/ai/"
+                src="https://state-forest-department-bap.becknprotocol.io/"
                 frameBorder="0"
                 allowFullScreen
                 width={"100%"}
