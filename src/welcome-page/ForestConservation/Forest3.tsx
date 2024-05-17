@@ -9,6 +9,7 @@ const Forest3 = () => {
         logoSrc="/assets/beckn_lg.svg"
         headingLine1="An impact investor tracks performance of a restoration "
         headingLine2="project"
+        subDescription=""
         logoLinkTo="/forestconservation"
       />
       <div className="climate-container">

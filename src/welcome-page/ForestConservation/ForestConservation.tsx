@@ -4,6 +4,7 @@ import "../../welcome-page/selectExperience.css";
 import { useEffect } from "react";
 import { Typography } from "antd";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
+import Header from "../../common/Header/Header";
 
 const ClimateResilience: React.FC = () => {
   // <-- Corrected component declaration
@@ -21,43 +22,13 @@ const ClimateResilience: React.FC = () => {
   return (
     <>
       <div style={{ overflow: "hidden" }}>
-        <div className="headLogo-image">
-          <Link to="/select-experience">
-            <img
-              className="Beckn-image"
-              src="/assets/beckn_lg.svg"
-              alt={"Logo"}
-            />
-          </Link>{" "}
-          <div className="heading-container">
-            <Typography.Title
-              level={3}
-              style={{
-                margin: 0,
-                textAlign: "center",
-                color: "rgba(78, 119, 150, 1)",
-                fontSize: "32px",
-                fontWeight: "600",
-              }}
-            >
-              Climate Resilience Data Highways
-              <br /> for Forest Conservation
-            </Typography.Title>
-            <Typography.Paragraph
-              style={{
-                margin: "10px 0",
-                textAlign: "center",
-                color: "rgba(123, 123, 123, 1)",
-                fontSize: "16px",
-                fontWeight: "600",
-              }}
-            >
-              A decentralized network for secure access to reliable data
-            </Typography.Paragraph>
-          </div>
-          <img src="/assets/jica.png" alt="Logo" />
-        </div>
-
+      <Header 
+        logoSrc='/assets/beckn_lg.svg'
+        headingLine1='Climate Resilience Data Highways'
+        headingLine2 = 'for Forest Conservation'
+        subDescription = 'A decentralized network for secure access to reliable data'
+        logoLinkTo="/select-experience"
+        />
         <div className="welcome-Screen-container">
           <div className="child-container">
             <div className="animates fadeIns fives home-card-container">

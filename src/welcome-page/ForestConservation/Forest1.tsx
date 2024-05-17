@@ -10,8 +10,8 @@ const Forest1 = () => {
         logoSrc='/assets/beckn_lg.svg'
         headingLine1='A state forest department assesses forest health and'
         headingLine2 = 'prioritizes areas for intervention'
+        subDescription=""
         logoLinkTo="/forestconservation"
-
       />
       <div className="climate-container">
         <div className="desktop-wrapper">

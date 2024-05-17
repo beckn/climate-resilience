@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Typography } from "antd";
 import { Link } from "react-router-dom";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
+import Header from "../../common/Header/Header";
 
 const ClimateResilience: React.FC = () => {
   const navigate = useNavigate();
@@ -19,42 +20,13 @@ const ClimateResilience: React.FC = () => {
   return (
     <>
       <div style={{ overflow: "hidden" }}>
-        <div className="headLogo-image">
-          <Link to="/select-experience">
-            <img
-              className="Beckn-image"
-              src="/assets/beckn_lg.svg"
-              alt={"Logo"}
-            />
-          </Link>
-          <div className="heading-container">
-            <Typography.Title
-              level={3}
-              style={{
-                margin: 0,
-                textAlign: "center",
-                color: "rgba(78, 119, 150, 1)",
-                fontSize: "32px",
-                fontWeight: "600",
-              }}
-            >
-              Climate Resilience Data Highways for <br />
-              Disaster Resilience
-            </Typography.Title>
-            <Typography.Paragraph
-              style={{
-                margin: "10px 0",
-                textAlign: "center",
-                color: "rgba(123, 123, 123, 1)",
-                fontSize: "16px",
-                fontWeight: "600",
-              }}
-            >
-              A decentralized network for secure access to reliable data
-            </Typography.Paragraph>
-          </div>
-          <img src="/assets/jica.png" alt="Logo" />
-        </div>
+        <Header 
+        logoSrc='/assets/beckn_lg.svg'
+        headingLine1='Climate Resilience Data Highways for'
+        headingLine2 = 'Disaster Resilience'
+        subDescription = 'A decentralized network for secure access to reliable data'
+        logoLinkTo="/select-experience"
+        />
 
         <div className="welcome-Screen-container">
           <div className="child-container">
@@ -107,7 +79,7 @@ const ClimateResilience: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div style={{ display: "flex", alignItems: "center" , marginTop: '70px' , marginBottom: '20px' }}>
+            <div style={{ display: "flex", alignItems: "center" , marginTop: '70px' , marginBottom: '20px' , margin: '1rem'}}>
               <img
                 src="/assets/imaginefuture.svg"
                 alt="icon"
@@ -118,12 +90,12 @@ const ClimateResilience: React.FC = () => {
                 Highways
               </h3>
             </div>
-            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+            <div style={{ padding: "56.25% 0 0 0", position: "relative", marginBottom: '3rem' , margin: '1rem'}}>
               <iframe
                 src="https://player.vimeo.com/video/936514306?h=89570ff4e0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" , border: '1px solid #8ac2eb', borderRadius: '5px' , marginBottom: '1rem'}}
                 title="video_1"
               ></iframe>
             </div>

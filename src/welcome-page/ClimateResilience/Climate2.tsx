@@ -10,6 +10,7 @@ const Climate2 = () => {
         logoSrc="/assets/beckn_lg.svg"
         headingLine1="A climate services startup delivers flood"
         headingLine2="predictions for early warnings"
+        subDescription=""
         logoLinkTo="/climateresilience"
       />
       <div className="climate-container">

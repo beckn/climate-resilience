@@ -16,7 +16,7 @@ const WelcomeScreen = () => {
   return (
     <div className="welcome-Screen-container">
       <div className="child-container">
-        <div className="headLogo">
+        <div className="headLogo animate fadeIn five">
           <img className="Beckn-logo" src="/assets/beckn_lg.svg" alt={"Logo"} />
         </div>
         <div className="animate fadeIn five">
@@ -43,7 +43,7 @@ const WelcomeScreen = () => {
             <img
               src="/assets/jica.png" 
               alt="Logo"
-              style={{ width: "99px", height: "80px", marginTop: "3rem" }}
+              style={{ width: "99px", height: "80px", marginTop: "3rem" , marginBottom: "4rem"}}
             />
           </div>
         </div>

@@ -47,11 +47,24 @@
   text-align: center;
   /* display: grid; */
 }
+
 .Beckn-logo {
   height: 50px;
   width: 161px;
   cursor: pointer;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .welcomeQuote {
+    font-size: 48px !important;
+    line-height: 72px !important;
+  }
+}
+@media (max-width: 768px) {
+  .welcomeQuote {
+    font-size: 32px !important;
+    line-height: 48px !important;
+  }
 }
 .welcomeQuote {
   font-weight: 400;
@@ -59,6 +72,8 @@
   line-height: 96px;
   color: #4e4646;
 }
+
+
 .headLogo {
   display: flex;
   justify-content: center;
