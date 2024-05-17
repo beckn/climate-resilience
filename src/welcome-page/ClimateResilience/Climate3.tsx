@@ -9,6 +9,7 @@ const Climate3 = () => {
         logoSrc="/assets/beckn_lg.svg"
         headingLine1="A humanitarian aid organization plans for"
         headingLine2="anticipatory aid"
+        subDescription=""
         logoLinkTo="/climateresilience"
       />
       <div className="climate-container">

@@ -124,8 +124,8 @@
 }
 .home-card-container {
   overflow: auto;
-  height: 70vh;
-  margin: 35px auto;
+  /* height: 70vh; */
+  /* margin: 35px auto; */
   margin-bottom: unset;
 }
 
@@ -153,10 +153,12 @@
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1471px) {
-  .fadeIns {
+  /* .fadeIns {
     margin-top: 50px;
-  }
+  } */
   .headLogo-image {
     width: 90%;
   }
 }
+
+

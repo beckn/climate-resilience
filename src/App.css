@@ -204,9 +204,14 @@ iframe .header-container .location-btn {
   }
 }
 
-.card-sub-containers li:hover {
-  scale: 1.03;
+.card-sub-containers li {
+  transition: transform 0.1s ease;
 }
+
+.card-sub-containers li:hover {
+  transform: scaleY(1.03);
+}
+
 .osc_tab_change.dsnp_url_tab {
   bottom: 32%;
   left: 0;
