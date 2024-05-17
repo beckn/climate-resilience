@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Typography } from "antd";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
 import Header from "../../common/Header/Header";
+import FloatingButton from "../../common/FloatingButtons/FloatingButton";
 
 const ClimateResilience: React.FC = () => {
   // <-- Corrected component declaration
@@ -102,6 +103,7 @@ const ClimateResilience: React.FC = () => {
           </div>
         </div>
       </div>
+      <FloatingButton/>
       <ScrollDownArrow />
     </>
   );

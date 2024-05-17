@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../../common/Header/Header";
 import "../../welcome-page/ClimateResiliance.css";
+import ScrollDownArrow from "../../common/ScrollDownArrow";
+import FloatingButton from "../../common/FloatingButtons/FloatingButton";
 
 const Forest3 = () => {
   return (
@@ -74,6 +76,8 @@ const Forest3 = () => {
           style={{ borderRadius: "5px", marginTop: "20px" }}
         ></iframe>
       </div>
+      <FloatingButton/>
+      <ScrollDownArrow/>
     </>
   );
 };

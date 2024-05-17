@@ -1,3 +1,4 @@
+import FloatingButton from "../../common/FloatingButtons/FloatingButton";
 import Header from "../../common/Header/Header";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
 import "../../welcome-page/ClimateResiliance.css";
@@ -77,6 +78,7 @@ const Climate3 = () => {
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
+      <FloatingButton/>
       <ScrollDownArrow />
     </>
   );
