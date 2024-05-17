@@ -6,6 +6,7 @@ import "./selectExperience.css";
 import { useEffect } from "react";
 import { Typography } from "antd";
 import Header from "../common/Header/Header";
+import FloatingButton from "../common/FloatingButtons/FloatingButton";
 
 const SelectExperience = () => {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ const SelectExperience = () => {
   }, []);
 
   return (
+    <>
     <div style={{ overflow: "hidden" }}>
       <Header
         logoSrc="/assets/beckn_lg.svg"
@@ -69,6 +71,8 @@ const SelectExperience = () => {
         </div>
       </div>
     </div>
+    <FloatingButton/>
+    </>
   );
 };
 

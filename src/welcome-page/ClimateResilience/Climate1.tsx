@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../common/Header/Header";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
 import "../../welcome-page/ClimateResiliance.css";
+import FloatingButton from "../../common/FloatingButtons/FloatingButton";
 
 const Climate1 = () => {
   return (
@@ -83,6 +84,7 @@ const Climate1 = () => {
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
       </div>
+      <FloatingButton/>
       <ScrollDownArrow />
     </>
   );

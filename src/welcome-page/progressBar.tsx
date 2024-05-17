@@ -23,7 +23,12 @@ const ProgressBar = () => {
   useEffect(() => {
     if (data === 100) {
       console.log("progress-Bar: ", data);
-      localStorage.getItem("name") === "himalayas"
+      
+      localStorage.getItem("name") === "welcomescreen"
+        ? navigate("/")
+        : localStorage.getItem("name") === "selectexperience"
+        ? navigate("/select-experience")
+        : localStorage.getItem("name") === "cities"
         ? navigate("/himalayas")
         : localStorage.getItem("name") === "cities"
         ? navigate("/cities")
@@ -49,8 +54,8 @@ const ProgressBar = () => {
         ? navigate("/ODR")
         : localStorage.getItem("name") === "ONDC"
         ? navigate("/ONDC")
-        //new routes
-        : localStorage.getItem("name") === "ClimateResilience"
+        : //new routes
+        localStorage.getItem("name") === "ClimateResilience"
         ? navigate("/climateresilience")
         : localStorage.getItem("name") === "ForestConservation"
         ? navigate("/forestconservation")
@@ -66,7 +71,6 @@ const ProgressBar = () => {
         ? navigate("/forest2")
         : localStorage.getItem("name") === "FOREST3"
         ? navigate("/forest3")
-
         : localStorage.getItem("name") === "regenerativeAgriculture"
         ? navigate("/regenerativeAgriculture")
         : localStorage.getItem("name") === "regenUEI"
@@ -77,17 +81,9 @@ const ProgressBar = () => {
 
   return (
     <div>
-<div className="logo-container">
-        <img
-          className="logo-left"
-          src="/assets/beckn_lg.svg"
-          alt={"Logo"}
-        />
-        <img
-          className="logo-right"
-          src="/assets/jica.png"
-          alt={"Logo"}
-        />
+      <div className="logo-container">
+        <img className="logo-left" src="/assets/beckn_lg.svg" alt={"Logo"} />
+        <img className="logo-right" src="/assets/jica.png" alt={"Logo"} />
       </div>
       <div className="main-containers">
         <div>

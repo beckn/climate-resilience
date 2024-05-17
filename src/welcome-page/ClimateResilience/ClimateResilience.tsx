@@ -4,6 +4,7 @@ import { Typography } from "antd";
 import { Link } from "react-router-dom";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
 import Header from "../../common/Header/Header";
+import FloatingButton from "../../common/FloatingButtons/FloatingButton";
 
 const ClimateResilience: React.FC = () => {
   const navigate = useNavigate();
@@ -102,6 +103,7 @@ const ClimateResilience: React.FC = () => {
           </div>
         </div>
       </div>
+      <FloatingButton/>
       <ScrollDownArrow />
     </>
   );
