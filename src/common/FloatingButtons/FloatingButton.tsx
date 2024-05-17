@@ -35,7 +35,7 @@ const FloatingButton: React.FC = () => {
     };
   
     const handleGoBack = () => {
-      navigate(-1); // Go back in history using React Router
+      navigate("/"); // Go back in history using React Router
     };
 
   return (
