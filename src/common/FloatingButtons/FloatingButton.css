@@ -80,3 +80,16 @@
 .image-item.active {
   filter: none;
 }
+
+.image-item.disabled {
+  pointer-events: none;
+}
+
+/* FloatingButton.css */
+.tooltip {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}

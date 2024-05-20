@@ -14,8 +14,6 @@ const FloatingButton: React.FC = () => {
   const isAnyRestrictedPage =
     isSelectExperiencePage || isClimateResilienceOrForestConservationPage;
 
-  const kayPassKaru = localStorage.getItem("name");
-
   useEffect(() => {
     const handleBackButton = (event: any) => {
       if (isAnyRestrictedPage && event.keyCode === 8) {
@@ -32,7 +30,7 @@ const FloatingButton: React.FC = () => {
   }, [navigate, isAnyRestrictedPage]);
 
   const handleNevigate = (id: any) => {
-    console.log("FROM FLOATING BUTTON",localStorage.getItem("name"));
+    console.log("FROM FLOATING BUTTON", localStorage.getItem("name"));
     // localStorage.setItem("prev",localStorage.getItem("name")); // Store the current page as the previous page
     localStorage.setItem("name", id);
     navigate("/progress", { state: { from: id } });
@@ -81,7 +79,7 @@ const FloatingButton: React.FC = () => {
               <div className="image-group">
                 <div
                   className={`image-item ${
-                    location.pathname === "/climate1" ? "active" : ""
+                    location.pathname === "/climate1" ? "active disabled" : ""
                   }`}
                   onClick={() => handleNevigate("CLIMATE1")}
                   title="DragonFoods"
@@ -90,7 +88,7 @@ const FloatingButton: React.FC = () => {
                 </div>
                 <div
                   className={`image-item ${
-                    location.pathname === "/climate2" ? "active" : ""
+                    location.pathname === "/climate2" ? "active disabled" : ""
                   }`}
                   onClick={() => handleNevigate("CLIMATE2")}
                   title="SkyAnalytics"
@@ -102,7 +100,7 @@ const FloatingButton: React.FC = () => {
                 </div>
                 <div
                   className={`image-item ${
-                    location.pathname === "/climate3" ? "active" : ""
+                    location.pathname === "/climate3" ? "active disabled" : ""
                   }`}
                   onClick={() => handleNevigate("CLIMATE3")}
                   title="HarmoniAid"
@@ -119,7 +117,7 @@ const FloatingButton: React.FC = () => {
               <div className="image-group">
                 <div
                   className={`image-item ${
-                    location.pathname === "/forest1" ? "active" : ""
+                    location.pathname === "/forest1" ? "active disabled" : ""
                   }`}
                   onClick={() => handleNevigate("FOREST1")}
                   title="State Forest Department"
@@ -128,7 +126,7 @@ const FloatingButton: React.FC = () => {
                 </div>
                 <div
                   className={`image-item ${
-                    location.pathname === "/forest2" ? "active" : ""
+                    location.pathname === "/forest2" ? "active disabled" : ""
                   }`}
                   onClick={() => handleNevigate("FOREST2")}
                   title="Envirogrowth"
@@ -140,7 +138,7 @@ const FloatingButton: React.FC = () => {
                 </div>
                 <div
                   className={`image-item ${
-                    location.pathname === "/forest3" ? "active" : ""
+                    location.pathname === "/forest3" ? "active disabled" : ""
                   }`}
                   onClick={() => handleNevigate("FOREST3")}
                   title="Earth Support Initiative"
@@ -156,19 +154,19 @@ const FloatingButton: React.FC = () => {
             <div className="icon-group">
               <div
                 className="icon-item"
-                onClick={() => handleNevigate("selectexperience")}
-              >
-                <img src="/assets/home.svg" alt="Icon 1" />
-              </div>
-              <div
-                className="icon-item"
                 onClick={() => handleNevigate("backwards")}
               >
                 <img
-                  style={{ height: "1.8rem" }}
-                  src="/assets/curvedArrow.svg"
+                  style={{ height: "2.5rem" }}
+                  src="/assets/backarrow.svg"
                   alt="Icon 2"
                 />
+              </div>
+              <div
+                className="icon-item"
+                onClick={() => handleNevigate("selectexperience")}
+              >
+                <img src="/assets/home.svg" alt="Icon 1" />
               </div>
             </div>
           </>
