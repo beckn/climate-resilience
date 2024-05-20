@@ -12,10 +12,6 @@ const ClimateResilience: React.FC = () => {
     navigate("/progress");
   };
 
-  const handleClick = () => {
-    console.log("RECEIVED name", localStorage.getItem("name"));
-    console.log("PREV Page", localStorage.getItem("prev"));
-  };
 
   return (
     <>
@@ -128,7 +124,6 @@ const ClimateResilience: React.FC = () => {
       </div>
       <FloatingButton />
       <ScrollDownArrow />
-      <button onClick={handleClick}>CHECKER</button>
     </>
   );
 };
