@@ -44,15 +44,11 @@ const Climate2 = () => {
             View the Use-case Demo for Sky Analytics
           </h3>
         </div>
-        <div>
+        <div className="responsive-iframe-container">
           <iframe
             src="https://player.vimeo.com/video/936039112?h=68a46cf247&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            style={{
-              width: "100%",
-              height: "700px",
-            }}
             title="Video 3"
           ></iframe>
         </div>
@@ -68,15 +64,11 @@ const Climate2 = () => {
           />{" "}
           <h3 className="sub-heading">Behind the Scenes</h3>
         </div>
-        <div>
+        <div className="responsive-iframe-container">
           <iframe
             src="https://player.vimeo.com/video/936038352?h=ef276b1d80&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            style={{
-              width: "100%",
-              height: "700px",
-            }}
             title="Video3_BTS"
           ></iframe>
         </div>

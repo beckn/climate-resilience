@@ -162,3 +162,42 @@
 }
 
 
+/* Add these styles to selectExperience.css */
+
+/* General styles for cards */
+.card-sub-containers {
+  display: flex;
+  justify-content: space-around; /* Centers the cards horizontally */
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.card-with-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content inside each card */
+  margin: 10px;
+}
+
+.first-image-card {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.card-title-image {
+  text-align: center;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .card-sub-containers {
+    flex-direction: column; /* Stacks the cards vertically */
+    align-items: center; /* Centers the cards horizontally */
+  }
+
+  .card-with-image {
+    width: 90%; /* Adjust width for better appearance on mobile */
+    max-width: 300px; /* Optional: Limit maximum width */
+  }
+}
