@@ -19,8 +19,8 @@ const FloatingButton: React.FC = () => {
   useEffect(() => {
     const handleBackButton = (event: any) => {
       if (isAnyRestrictedPage && event.keyCode === 8) {
-        event.preventDefault(); // Prevent browser default action
-        navigate(-1); // Go back in history using React Router
+        event.preventDefault();
+        navigate(-1);
       }
     };
 
@@ -32,7 +32,8 @@ const FloatingButton: React.FC = () => {
   }, [navigate, isAnyRestrictedPage]);
 
   const handleNevigate = (id: any) => {
-    localStorage.setItem("previousPage", location.pathname); // Store the current page as the previous page
+    console.log("FROM FLOATING BUTTON",localStorage.getItem("name"));
+    // localStorage.setItem("prev",localStorage.getItem("name")); // Store the current page as the previous page
     localStorage.setItem("name", id);
     navigate("/progress", { state: { from: id } });
   };

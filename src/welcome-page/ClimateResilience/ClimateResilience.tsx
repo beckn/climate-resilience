@@ -1,7 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import { Typography } from "antd";
-import { Link } from "react-router-dom";
 import ScrollDownArrow from "../../common/ScrollDownArrow";
 import Header from "../../common/Header/Header";
 import FloatingButton from "../../common/FloatingButtons/FloatingButton";
@@ -15,23 +12,20 @@ const ClimateResilience: React.FC = () => {
     navigate("/progress");
   };
 
-  // useEffect(() => {
-  //   localStorage.clear();
-  // }, []);
+  const handleClick = () => {
+    console.log("RECEIVED name", localStorage.getItem("name"));
+    console.log("PREV Page", localStorage.getItem("prev"));
+  };
 
-  const handleClick=()=>{
-    console.log("RECEIVED name",localStorage.getItem("name") );
-    console.log("PREV Page",localStorage.getItem("prev") );
-  }
   return (
     <>
       <div style={{ overflow: "hidden" }}>
-        <Header 
-        logoSrc='/assets/beckn_lg.svg'
-        headingLine1='Climate Resilience Data Highways for'
-        headingLine2 = 'Disaster Resilience'
-        subDescription = 'A decentralized network for secure access to reliable data'
-        logoLinkTo="/select-experience"
+        <Header
+          logoSrc="/assets/beckn_lg.svg"
+          headingLine1="Climate Resilience Data Highways for"
+          headingLine2="Disaster Resilience"
+          subDescription="A decentralized network for secure access to reliable data"
+          logoLinkTo="/select-experience"
         />
 
         <div className="welcome-Screen-container">
@@ -85,7 +79,15 @@ const ClimateResilience: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div style={{ display: "flex", alignItems: "center" , marginTop: '70px' , marginBottom: '20px' , margin: '1rem'}}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "70px",
+                marginBottom: "20px",
+                margin: "1rem",
+              }}
+            >
               <img
                 src="/assets/imaginefuture.svg"
                 alt="icon"
@@ -96,19 +98,35 @@ const ClimateResilience: React.FC = () => {
                 Highways
               </h3>
             </div>
-            <div style={{ padding: "56.25% 0 0 0", position: "relative", marginBottom: '3rem' , margin: '1rem'}}>
+            <div
+              style={{
+                padding: "56.25% 0 0 0",
+                position: "relative",
+                marginBottom: "3rem",
+                margin: "1rem",
+              }}
+            >
               <iframe
                 src="https://player.vimeo.com/video/936514306?h=89570ff4e0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" , border: '1px solid #8ac2eb', borderRadius: '5px' , marginBottom: '1rem'}}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: "1px solid #8ac2eb",
+                  borderRadius: "5px",
+                  marginBottom: "1rem",
+                }}
                 title="video_1"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <FloatingButton/>
+      <FloatingButton />
       <ScrollDownArrow />
       <button onClick={handleClick}>CHECKER</button>
     </>
