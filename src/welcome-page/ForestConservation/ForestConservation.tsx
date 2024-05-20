@@ -13,12 +13,11 @@ const ClimateResilience: React.FC = () => {
 
   const handleNevigate = (id: any) => {
     localStorage.setItem("name", id);
+    localStorage.setItem("prev", "ForestConservation");
     navigate("/progress");
   };
 
-  useEffect(() => {
-    localStorage.clear();
-  }, []);
+
 
   return (
     <>

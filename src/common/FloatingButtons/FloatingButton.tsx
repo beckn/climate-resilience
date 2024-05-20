@@ -1,42 +1,41 @@
 import React, { useEffect } from "react";
 import "./FloatingButton.css";
-import { useLocation, useNavigate, useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const FloatingButton: React.FC = () => {
-    const location = useLocation();
-    const navigate = useNavigate();
-    const isSelectExperiencePage = location.pathname === "/select-experience";
-    const isClimateResilienceOrForestConservationPage =
-      location.pathname === "/climateresilience" ||
-      location.pathname === "/forestconservation";
-    const isClimatePage = location.pathname.includes("/climate");
-    const isForestPage = location.pathname.includes("/forest");
-    const isAnyRestrictedPage =
-      isSelectExperiencePage || isClimateResilienceOrForestConservationPage;
-  
-    useEffect(() => {
-      const handleBackButton = (event: any) => {
-        if (isAnyRestrictedPage && event.keyCode === 8) {
-          event.preventDefault(); // Prevent browser default action
-          navigate(-1); // Go back in history using React Router
-        }
-      };
-  
-      window.addEventListener("keydown", handleBackButton);
-  
-      return () => {
-        window.removeEventListener("keydown", handleBackButton);
-      };
-    }, [navigate, isAnyRestrictedPage]);
-  
-    const handleNevigate = (id: any) => {
-      localStorage.setItem("name", id);
-      navigate("/progress");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isSelectExperiencePage = location.pathname === "/select-experience";
+  const isClimateResilienceOrForestConservationPage =
+    location.pathname === "/climateresilience" ||
+    location.pathname === "/forestconservation";
+  const isClimatePage = location.pathname.includes("/climate");
+  const isForestPage = location.pathname.includes("/forest");
+  const isAnyRestrictedPage =
+    isSelectExperiencePage || isClimateResilienceOrForestConservationPage;
+
+  const kayPassKaru = localStorage.getItem("name");
+
+  useEffect(() => {
+    const handleBackButton = (event: any) => {
+      if (isAnyRestrictedPage && event.keyCode === 8) {
+        event.preventDefault(); // Prevent browser default action
+        navigate(-1); // Go back in history using React Router
+      }
     };
-  
-    const handleGoBack = () => {
-      navigate("/"); // Go back in history using React Router
+
+    window.addEventListener("keydown", handleBackButton);
+
+    return () => {
+      window.removeEventListener("keydown", handleBackButton);
     };
+  }, [navigate, isAnyRestrictedPage]);
+
+  const handleNevigate = (id: any) => {
+    localStorage.setItem("previousPage", location.pathname); // Store the current page as the previous page
+    localStorage.setItem("name", id);
+    navigate("/progress", { state: { from: id } });
+  };
 
   return (
     <div className="floating-button-container">
@@ -44,7 +43,10 @@ const FloatingButton: React.FC = () => {
         {isAnyRestrictedPage ? (
           <div className="icon-group icon-group-restricted">
             {location.pathname === "/select-experience" ? (
-              <div className="icon-item" onClick={handleGoBack}>
+              <div
+                className="icon-item"
+                onClick={() => handleNevigate("backwards")}
+              >
                 <img
                   style={{ height: "1.8rem" }}
                   src="/assets/curvedArrow.svg"
@@ -59,7 +61,10 @@ const FloatingButton: React.FC = () => {
                 >
                   <img src="/assets/home.svg" alt="Icon 1" />
                 </div>
-                <div className="icon-item" onClick={handleGoBack}>
+                <div
+                  className="icon-item"
+                  onClick={() => handleNevigate("backwards")}
+                >
                   <img
                     style={{ height: "1.8rem" }}
                     src="/assets/curvedArrow.svg"
@@ -154,7 +159,10 @@ const FloatingButton: React.FC = () => {
               >
                 <img src="/assets/home.svg" alt="Icon 1" />
               </div>
-              <div className="icon-item" onClick={handleGoBack}>
+              <div
+                className="icon-item"
+                onClick={() => handleNevigate("backwards")}
+              >
                 <img
                   style={{ height: "1.8rem" }}
                   src="/assets/curvedArrow.svg"

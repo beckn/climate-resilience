@@ -11,13 +11,18 @@ const ClimateResilience: React.FC = () => {
 
   const handleNevigate = (id: any) => {
     localStorage.setItem("name", id);
+    localStorage.setItem("prev", "ClimateResilience");
     navigate("/progress");
   };
 
-  useEffect(() => {
-    localStorage.clear();
-  }, []);
+  // useEffect(() => {
+  //   localStorage.clear();
+  // }, []);
 
+  const handleClick=()=>{
+    console.log("RECEIVED name",localStorage.getItem("name") );
+    console.log("PREV Page",localStorage.getItem("prev") );
+  }
   return (
     <>
       <div style={{ overflow: "hidden" }}>
@@ -105,6 +110,7 @@ const ClimateResilience: React.FC = () => {
       </div>
       <FloatingButton/>
       <ScrollDownArrow />
+      <button onClick={handleClick}>CHECKER</button>
     </>
   );
 };
