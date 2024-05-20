@@ -3,6 +3,7 @@ import { Progress } from "antd";
 import { useNavigate } from "react-router-dom";
 import "./progressBar.css";
 import { useLocation } from "react-router-dom";
+import Header from "../common/Header/Header";
 
 const ProgressBar = () => {
   const [data, setdata] = useState(0);
@@ -46,7 +47,7 @@ const ProgressBar = () => {
       console.log("progress-Bar: ", data);
       console.log("********************************************");
 
-      switch (floatingButton||storedPage) {
+      switch (floatingButton || storedPage) {
         case "welcomescreen":
           navigate("/");
           break;
@@ -129,10 +130,13 @@ const ProgressBar = () => {
 
   return (
     <div>
-      <div className="logo-container">
-        <img className="logo-left" src="/assets/beckn_lg.svg" alt={"Logo"} />
-        <img className="logo-right" src="/assets/jica.png" alt={"Logo"} />
-      </div>
+      <Header
+        logoSrc="/assets/beckn_lg.svg"
+        headingLine1=""
+        headingLine2=""
+        subDescription=""
+        logoLinkTo=""
+      />
       <div className="main-containers">
         <div>
           <div className="headingOfHeader">

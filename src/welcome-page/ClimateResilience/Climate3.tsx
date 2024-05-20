@@ -40,7 +40,7 @@ const Climate3 = () => {
           />{" "}
           <h3 className="sub-heading">View the Use-case Demo for HarmoniAid</h3>
         </div>
-        <div>
+        <div className="responsive-iframe-container">
           <iframe
             src="https://player.vimeo.com/video/936148929?h=05badaafe8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
@@ -64,7 +64,7 @@ const Climate3 = () => {
           />{" "}
           <h3 className="sub-heading">Behind the Scenes</h3>
         </div>
-        <div>
+        <div className="responsive-iframe-container">
           <iframe
             src="https://player.vimeo.com/video/935672602?h=c8a7ce7fb7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
