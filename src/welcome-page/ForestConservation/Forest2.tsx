@@ -1,17 +1,16 @@
-import React from 'react';
-import Header from '../../common/Header/Header';
-import '../../welcome-page/ClimateResiliance.css';
-import ScrollDownArrow from '../../common/ScrollDownArrow';
-import FloatingButton from '../../common/FloatingButtons/FloatingButton';
+import React from "react";
+import Header from "../../common/Header/Header";
+import "../../welcome-page/ClimateResiliance.css";
+import ScrollDownArrow from "../../common/ScrollDownArrow";
+import FloatingButton from "../../common/FloatingButtons/FloatingButton";
 
 const Forest2 = () => {
-
   return (
     <>
       <Header
-        logoSrc='/assets/beckn_lg.svg'
-        headingLine1='A project implementing agency creates forest restoration'
-        headingLine2 = 'strategy'
+        logoSrc="/assets/beckn_lg.svg"
+        headingLine1="A project implementing agency creates forest restoration"
+        headingLine2="strategy"
         subDescription=""
         logoLinkTo="/forestconservation"
       />
@@ -32,47 +31,52 @@ const Forest2 = () => {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div className="iframe-text">Prototype Powered by Beckn</div>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "70px" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
-          />{" "}
-          <h3 className="sub-heading">imagine the climate resilience data highways</h3>
+          />
+          <h3 className="sub-heading">
+            imagine the climate resilience data highways
+          </h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/cDP7e1BWgek"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
-        <div style={{ display: "flex", alignItems: "center", marginTop: '3rem'}}>
+        <div className="responsive-iframe-container">
+          <iframe
+            src="https://player.vimeo.com/video/946368932?h=fd0754fa31&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Forest Conservation_Story 2"
+          ></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        <div
+          style={{ display: "flex", alignItems: "center", marginTop: "70px" }}
+        >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
-          />{" "}
+          />
           <h3 className="sub-heading">Behind the Scenes</h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/qPFJR__nhiU"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
+        <div className="responsive-iframe-container">
+          <iframe
+            src="https://player.vimeo.com/video/944004714?h=a973799e98&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="BTS_2_Envirogrowth Foundation"
+          ></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
       </div>
-      <FloatingButton/>
-      <ScrollDownArrow/>
+      <FloatingButton />
+      <ScrollDownArrow />
     </>
   );
 };
