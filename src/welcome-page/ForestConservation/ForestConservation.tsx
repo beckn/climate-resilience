@@ -17,17 +17,15 @@ const ClimateResilience: React.FC = () => {
     navigate("/progress");
   };
 
-
-
   return (
     <>
       <div style={{ overflow: "hidden" }}>
-      <Header 
-        logoSrc='/assets/beckn_lg.svg'
-        headingLine1='Climate Resilience Data Highways'
-        headingLine2 = 'for Forest Conservation'
-        subDescription = 'A decentralized network for secure access to reliable data'
-        logoLinkTo="/select-experience"
+        <Header
+          logoSrc="/assets/beckn_lg.svg"
+          headingLine1="Climate Resilience Data Highways"
+          headingLine2="for Forest Conservation"
+          subDescription="A decentralized network for secure access to reliable data"
+          logoLinkTo="/select-experience"
         />
         <div className="welcome-Screen-container">
           <div className="child-container">
@@ -80,29 +78,53 @@ const ClimateResilience: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
+
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "70px",
+                marginBottom: "20px",
+                margin: "1rem",
+              }}
+            >
               <img
                 src="/assets/imaginefuture.svg"
                 alt="icon"
                 style={{ marginRight: "10px" }}
-              />{" "}
-              <h3 className="sub-heading ">Imagine the Future</h3>
+              />
+              <h3 className="sub-heading">Imagine the Future</h3>
             </div>
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/cDP7e1BWgek"
-              title="Why Does Google Kill So Many Products? | Untangled"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              style={{ borderRadius: "5px", marginTop: "20px" }}
-            ></iframe>
+            <div
+              style={{
+                padding: "56.25% 0 0 0",
+                position: "relative",
+                marginBottom: "3rem",
+                margin: "1rem",
+              }}
+            >
+              <iframe
+                src="https://player.vimeo.com/video/944714344?h=52bf4b1299&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="Context Setting Video_Forest Conservation"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: "1px solid #8ac2eb",
+                  borderRadius: "5px",
+                  marginBottom: "1rem",
+                }}
+              ></iframe>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
           </div>
         </div>
       </div>
-      <FloatingButton/>
+      <FloatingButton />
       <ScrollDownArrow />
     </>
   );

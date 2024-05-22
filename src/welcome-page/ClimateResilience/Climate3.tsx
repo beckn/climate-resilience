@@ -45,10 +45,7 @@ const Climate3 = () => {
             src="https://player.vimeo.com/video/936148929?h=05badaafe8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            style={{
-              width: "100%",
-              height: "700px",
-            }}
+            
             title="Video_4"
           ></iframe>
         </div>
@@ -69,10 +66,7 @@ const Climate3 = () => {
             src="https://player.vimeo.com/video/935672602?h=c8a7ce7fb7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-            style={{
-              width: "100%",
-              height: "700px",
-            }}
+            
             title="Video_4_BTS"
           ></iframe>
         </div>

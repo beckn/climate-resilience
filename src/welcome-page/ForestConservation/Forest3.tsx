@@ -31,53 +31,50 @@ const Forest3 = () => {
             </div>
           </div>
         </div>
+        <div className="iframe-text">Prototype Powered by Beckn</div>
         <div
-          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+          style={{ display: "flex", alignItems: "center", marginTop: "70px" }}
         >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
-          />{" "}
+          />
           <h3 className="sub-heading">
             imagine the climate resilience data highways
           </h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/cDP7e1BWgek"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
+        <div className="responsive-iframe-container">
+          <iframe
+            src="https://player.vimeo.com/video/946474729?h=b671402309&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Forest Conservation_Story 3"
+          ></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
         <div
-          style={{ display: "flex", alignItems: "center", marginTop: "3rem" }}
+          style={{ display: "flex", alignItems: "center", marginTop: "70px" }}
         >
           <img
             src="/assets/videoIcon.svg"
             alt="icon"
             style={{ marginRight: "10px" }}
-          />{" "}
+          />
           <h3 className="sub-heading">Behind the Scenes</h3>
         </div>
-        <iframe
-          width="100%"
-          height="500"
-          src="https://www.youtube.com/embed/qPFJR__nhiU"
-          title="Why Does Google Kill So Many Products? | Untangled"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{ borderRadius: "5px", marginTop: "20px" }}
-        ></iframe>
+        <div className="responsive-iframe-container">
+            <iframe
+              src="https://player.vimeo.com/video/944004887?h=7b736afe7a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              title="BTS_3_ESI"
+            ></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
       </div>
-      <FloatingButton/>
-      <ScrollDownArrow/>
+      <FloatingButton />
+      <ScrollDownArrow />
     </>
   );
 };
